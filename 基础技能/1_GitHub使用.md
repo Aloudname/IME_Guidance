@@ -16,17 +16,17 @@ author @Aloudname @ZebraWoo
 
 建议是边用边练，一边锻炼写代码的能力，一边锻炼代码工程化管理的能力。在你的代码编辑器中（以 vscode 举例），搜索以下拓展并安装：
 
-![GitHubExtensionsinVSCode](docs/IME_Guidance/src/基础技能/1_GitHub使用/1.png)
+![GitHubExtensionsinVSCode](../src/基础技能/1_GitHub使用/1.png)
 
 这样就能在编辑器里方便地提交对项目的更改，以及查看别人的提交了：
 
-![CommitChangesinVSCode](docs/IME_Guidance/src/基础技能/1_GitHub使用/2.png)
+![CommitChangesinVSCode](../src/基础技能/1_GitHub使用/2.png)
 
 ## 复制别人的仓库
 
 如果想将别人仓库里的代码搬到自己的开发环境中，GitHub 对此提供了方便的几种办法：
 
-![repoClone](docs/IME_Guidance/src/基础技能/1_GitHub使用/3.png)
+![repoClone](../src/基础技能/1_GitHub使用/3.png)
 
 第一种是直接下载打包的.zip文件，然后手动解压；
 
@@ -46,15 +46,15 @@ git clone git@github.com:rmcong/RGBD-Cosal150-Dataset.git
 
 - Ubuntu 系统（一种 Linux 系统的发行版）中：
 
-![Ubuntu](docs/IME_Guidance/src/基础技能/1_GitHub使用/4.png)
+![Ubuntu](../src/基础技能/1_GitHub使用/4.png)
 
 - Windows 系统中使用 `win + R` 唤出并输入 `cmd` 进入命令行：
 
-![Win](docs/IME_Guidance/src/基础技能/1_GitHub使用/5.png)
+![Win](../src/基础技能/1_GitHub使用/5.png)
 
 - 也可以直接左键单击目标文件夹的路径，输入 `cmd` 进入命令行：
 
-![FileRouter](docs/IME_Guidance/src/基础技能/1_GitHub使用/6.png)
+![FileRouter](../src/基础技能/1_GitHub使用/6.png)
 
 这种方法需要本地安装 git 服务并且配置好 GitHub 账户。只需配置一次，后面非常方便。
 
