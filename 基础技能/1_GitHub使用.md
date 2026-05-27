@@ -60,3 +60,6 @@ git clone git@github.com:rmcong/RGBD-Cosal150-Dataset.git
 
 安装、配置 git 服务的教程可以参考 [这里](https://blog.csdn.net/2301_80035882/article/details/155000175)。
 
+## 协作使用
+
+GitHub最大的特点在于任何人都能参与开源项目。不管是团队内的协作开发，还是心血来潮想为某开源仓库做贡献。
