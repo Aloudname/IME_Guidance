@@ -24,7 +24,7 @@ author @Aloudname @ZebraWoo
 
 ## 复制别人的仓库
 
-如果想将别人仓库里的代码搬到自己的开发环境中，GitHub 对此提供了方便的几种办法：
+如果想将别人仓库里的代码下载到自己的开发环境中，GitHub 对此提供了方便的几种办法：
 
 ![repoClone](../src/基础技能/1_GitHub使用/3.png)
 
@@ -59,6 +59,8 @@ git clone git@github.com:rmcong/RGBD-Cosal150-Dataset.git
 这种方法需要本地安装 git 服务并且配置好 GitHub 账户。只需配置一次，后面非常方便。
 
 安装、配置 git 服务的教程可以参考 [这里](https://blog.csdn.net/2301_80035882/article/details/155000175)。
+
+注意，这些方法只是下载了别人的代码，而不是创建一个别人仓库的拷贝。如果你想基于别人的仓库创建一个属于自己的拷贝仓库，请参考第二节 [2_仓库管理](2_仓库管理.md)。
 
 ## 协作使用
 
