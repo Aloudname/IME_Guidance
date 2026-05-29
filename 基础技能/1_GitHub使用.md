@@ -125,7 +125,7 @@ cd /d <你的项目路径>\Hello-World
 git status
 
 # 新建或修改文件（此处示例）
-echo # Hello-World > README.md
+echo "# Hello-World" > README.md
 
 # 再看一眼改动状态
 git status
@@ -139,7 +139,7 @@ git status
 # 提交到本地仓库（-m 后是提交说明）
 git commit -m "docs: add project readme"
 
-# 推送到远程仓库（首次推送可能要加 -u）
+# 推送到远程仓库（首次推送建议加 -u 绑定上游分支，后续可直接 git push）
 git push -u origin main
 ```
 
