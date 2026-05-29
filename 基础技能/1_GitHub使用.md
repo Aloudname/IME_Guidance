@@ -124,8 +124,7 @@ cd /d <你的项目路径>\Hello-World
 # 查看当前状态（哪些文件改了、哪些未跟踪）
 git status
 
-# 新建或修改文件（此处示例）
-echo "# Hello-World" > README.md
+# 新建或修改文件（此处示例，使用编辑器创建 README.md 并写入一行 # Hello-World）
 
 # 再看一眼改动状态
 git status
@@ -139,9 +138,11 @@ git status
 # 提交到本地仓库（-m 后是提交说明）
 git commit -m "docs: add project readme"
 
-# 推送到远程仓库（首次推送建议加 -u 绑定上游分支，后续可直接 git push）
+# 推送到远程仓库（首次推送建议加 -u）
 git push -u origin main
 ```
+
+这里的 `-u`（`--set-upstream`）用于建立“本地分支 -> 远程分支”的跟踪关系。设置一次后，后续一般直接 `git push` / `git pull` 即可。
 
 如果你不确定当前分支是不是 `main`，可以先用：
 
