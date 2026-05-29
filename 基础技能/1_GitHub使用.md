@@ -96,4 +96,156 @@ gh repo create Hello-World --public/--private --source=. --remote=hello --push
 
 ## 用仓库开发项目
 
+前面我们学会了“怎么建仓库”，现在要学“怎么用仓库干活”。这一节用一个最小项目来跑完整流程：修改文件 -> 提交到本地仓库 -> 推送到 GitHub 远程仓库。
 
+### 1. 先理解三个区域：工作区、暂存区、本地仓库
+
+可以把 Git 理解成“分层存档系统”：
+
+- **工作区（Working Directory）**：你正在编辑的文件区域；
+- **暂存区（Staging Area）**：准备提交的“候选更改清单”；
+- **本地仓库（Local Repository）**：已经正式提交、可追溯历史的版本库。
+
+远程仓库（GitHub）可以理解为“云端备份 + 协作中心”。  
+所以，一次标准提交流程是：
+
+```text
+工作区修改 -> git add（进暂存区）-> git commit（进本地仓库）-> git push（到远程仓库）
+```
+
+### 2. 通过命令行完成一次完整提交
+
+假设我们已经有一个仓库 `Hello-World`，现在给它新增一个 `README.md` 并写入一句话。
+
+```bash
+# 进入项目目录（Windows 可用 cd /d 切换盘符）
+cd /d <你的项目路径>\Hello-World
+
+# 查看当前状态（哪些文件改了、哪些未跟踪）
+git status
+
+# 新建或修改文件（此处示例）
+echo # Hello-World > README.md
+
+# 再看一眼改动状态
+git status
+
+# 将 README.md 加入暂存区
+git add README.md
+
+# 查看“将被提交”的内容
+git status
+
+# 提交到本地仓库（-m 后是提交说明）
+git commit -m "docs: add project readme"
+
+# 推送到远程仓库（首次推送可能要加 -u）
+git push -u origin main
+```
+
+如果你不确定当前分支是不是 `main`，可以先用：
+
+```bash
+git branch
+```
+
+看带 `*` 的那一行。若你的默认分支叫 `master`，上面的 `main` 请替换成 `master`。
+
+### 3. 通过 VSCode 的 Git 插件完成同样流程
+
+很多同学更喜欢可视化操作。对应关系如下：
+
+- `git status` -> 左侧 **Source Control（源代码管理）** 面板的改动列表；
+- `git diff` -> 点击某个文件查看左右对比；
+- `git add` -> 在文件右边点 `+`（暂存）；
+- `git commit` -> 输入提交信息，点 `Commit`；
+- `git push` / `git pull` -> 点 `Sync Changes`（同步）。
+
+实际步骤也很简单：
+
+1. 改代码/文档（工作区）；
+2. 打开 Source Control，检查改动；
+3. 点 `+` 暂存你要提交的文件；
+4. 写好提交信息，点 `Commit`；
+5. 点 `Sync Changes` 推送到 GitHub（并拉取远程最新提交）。
+
+### 4. 几个高频命令（请熟到条件反射）
+
+```bash
+# 看状态
+git status
+
+# 看改动详情（尚未暂存）
+git diff
+
+# 看改动详情（已经暂存）
+git diff --staged
+
+# 暂存单个文件
+git add <文件路径>
+
+# 暂存所有改动
+git add .
+
+# 提交
+git commit -m "type: message"
+
+# 查看历史（精简）
+git log --oneline
+
+# 拉取远程更新
+git pull origin main
+
+# 推送本地提交
+git push origin main
+```
+
+其中提交信息建议写清楚一点，例如：
+
+- `docs: update installation guide`
+- `fix: handle empty input in parser`
+- `feat: add export button`
+
+这样后面回看历史时，不会两眼一黑全是 `update`、`modify`、`改一下`。
+
+### 5. 常见报错与处理
+
+#### （1）`nothing to commit, working tree clean`
+
+说明当前没有可提交改动。可能你已经提交过了，也可能根本没改到这个仓库里的文件。
+
+#### （2）`fatal: not a git repository`
+
+说明你当前命令行路径不在 Git 仓库内。先 `cd` 到项目根目录（有 `.git` 文件夹的目录）再执行命令。
+
+#### （3）`rejected` / `non-fast-forward`
+
+通常是远程仓库比你本地更新。先拉取再推送：
+
+```bash
+git pull origin main
+git push origin main
+```
+
+若出现冲突，按提示手动解决冲突文件，再 `add + commit + push`。
+
+### 6. 补充：创建仓库时常见选项到底是啥
+
+前面建仓库时提到过 `.gitignore` 和 `license`，这里补一嘴（避免第一次见到就懵）。
+
+- **`.gitignore`**：告诉 Git 哪些文件不要提交（如编译产物、缓存、临时文件、账号配置等）；
+- **`LICENSE`**：开源许可证，规定“别人能不能用你的代码、怎么用、需不需要署名、可不可以商用”等。
+
+如果你暂时不确定怎么选，学生练习项目可以先用 `MIT License`，后续再根据项目需求调整。
+
+### 7. 小结
+
+到这里，你已经能完成一个仓库的基础开发闭环：
+
+1. 创建仓库（Web 或 CLI）；
+2. 在本地修改项目（工作区）；
+3. 将更改提交到本地仓库（`add + commit`）；
+4. 同步到 GitHub（`push`）；
+5. 需要时拉取他人更新（`pull`）。
+
+下一节我们就进入“和别人的仓库协作”——也就是 clone、fork、pull request 和 issues 的实战流程。
