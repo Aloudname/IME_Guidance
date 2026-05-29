@@ -118,16 +118,13 @@ gh repo create Hello-World --public/--private --source=. --remote=hello --push
 假设我们已经有一个仓库 `Hello-World`，现在给它新增一个 `README.md` 并写入一句话。
 
 ```bash
-# 进入项目目录（Windows 的 CMD 用 cd /d；Mac/Linux/Git Bash 直接 cd）
-cd /d <你的项目路径>\Hello-World
-# 或
+# 进入项目目录
 cd <你的项目路径>/Hello-World
 
 # 查看当前状态（哪些文件改了、哪些未跟踪）
 git status
 
-# 新建或修改文件（二选一：手动编辑 / 命令行写入）
-echo # Hello-World> README.md
+# 新建或修改文件（也可直接在编辑器里手动创建 README.md）
 echo "# Hello-World" > README.md
 
 # 再看一眼改动状态
@@ -146,7 +143,7 @@ git commit -m "docs: add project readme"
 git push -u origin main
 ```
 
-上面“写入文件”的两条命令分别常见于 Windows CMD 和 Bash/PowerShell，按你当前终端环境选择其一即可。首次推送前若不确定远程仓库是否已关联，可以先执行 `git remote -v` 检查。
+在 Windows CMD 里如果需要跨盘切换目录，可用 `cd /d <你的项目路径>\Hello-World`。首次推送前若不确定远程仓库是否已关联，可以先执行 `git remote -v` 检查。
 
 这里的 `-u`（`--set-upstream`）用于建立“本地分支 -> 远程分支”的跟踪关系。设置一次后，后续一般直接 `git push` / `git pull` 即可。
 
