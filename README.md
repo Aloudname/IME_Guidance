@@ -41,34 +41,28 @@
 **希望对你们有所帮助！祝你们生活愉快、前程似锦！**
 
 ---
-
 <h2>Contributors</h2>
 
-<table>
-<tr>
-	<td align="center" width="210">
-		<a href="https://github.com/Aloudname">
-			<img src="https://github.com/Aloudname.png" width="80" height="80" style="border-radius: 50%;" alt="Aloudname"/>
-			<br/>
-			<sub><b>Aloudname</b></sub>
-		</a>
-		<br/>
-		<sub> 2022 级 </sub>
-        <br/>
-		<sub> 苦b学习AI infra中 </sub>
-	</td>
-	<td align="center" width="210">
-		<a href="https://github.com/ZebraWoo">
-			<img src="https://github.com/ZebraWoo.png" width="80" height="80" style="border-radius: 50%;" alt="ZebraWoo"/>
-			<br/>
-			<sub><b>ZebraWoo</b></sub>
-		</a>
-		<br/>
-		<sub> 2022 级 </sub>
-		<br/>
-		<sub> 职业规划 </sub>
-	</td>
-</tr>
-</table>
+<a href="https://github.com/Aloudname">
+	<img src="https://github.com/Aloudname.png" width="100" height="100" style="border-radius: 50%;" alt="Aloudname"/>
+</a>
+<br/>
+<sub><b><a href="https://github.com/Aloudname">Aloudname</a></b></sub>
+<br/>
+<sub>2022 IME</sub>
+<br/>
+<sub> working: AI infra</sub>
+
+<br/><br/>
+
+<a href="https://github.com/ZebraWoo">
+	<img src="https://github.com/ZebraWoo.png" width="100" height="100" style="border-radius: 50%;" alt="ZebraWoo"/>
+</a>
+<br/>
+<sub><b><a href="https://github.com/ZebraWoo">ZebraWoo</a></b></sub>
+<br/>
+<sub>2022 IME</sub>
+<br/>
+<sub> working: Spiking Neural Networks</sub>
 
 </div>
