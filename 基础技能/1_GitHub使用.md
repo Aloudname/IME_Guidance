@@ -91,3 +91,9 @@ gh repo create Hello-World --public/--private --source=. --remote=hello --push
 ```
 
 `Hello-World` 是创建的远程仓库名；`--public/--private` 控制仓库是否公开；`--source` 指定本地仓库的位置；`--remote` 给远程仓库起个方便的别名；`--push` 将本地仓库的内容传至远程仓库。
+
+创建仓库后，我们可以在 `Settings` 里更改仓库设置。
+
+## 用仓库开发项目
+
+

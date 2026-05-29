@@ -18,7 +18,7 @@
 
 这个仓库（repo）面向以 ~~神圣罗马帝国~~ **智能医学工程专业生** 身份踏入大学校园的学弟学妹们，为羽翼还未丰满、对未来还不甚了解的你们，提供求学、工作和生活上的微薄参考。与你们一样，初入校园时的我们也怀抱热情（但更多的是迷茫和疑惑）。作为 **“新兴专业”** 的前几批学生，我们成长求学的道路上少不了碰壁、挫折和困惑。如今大学四年生活已近尾声，各奔前程之时，我们对曾经的一些问题有了自己的答案，也逐渐发现了目前生涯规划中的不足。于是，我们想尽可能多地将自己来时路上求学和生活中的挫折和感悟记录下来，给你们讲述自己的 **“失败学”**。同时，我们想感谢四年时光里给予我们无限支持和关怀的老师和辅导员，感谢培育我们的山东大学控制科学与工程学院。
 
-如果对你有用，请不吝收藏我们的 repo！另外，我们欢迎 IME/BME 专业的后辈们继续完善她，帮助更多后辈！
+如果对你有用，请不吝收藏我们的 repo！另外，我们欢迎 IME / BME 专业的后辈们继续完善她，帮助更多后辈！
 
 ## 这个 repo 有什么？
 
@@ -39,5 +39,36 @@
 <div align="center">
 
 **希望对你们有所帮助！祝你们生活愉快、前程似锦！**
+
+---
+
+<h2>Contributors</h2>
+
+<table>
+<tr>
+	<td align="center" width="210">
+		<a href="https://github.com/Aloudname">
+			<img src="https://github.com/Aloudname.png" width="80" height="80" style="border-radius: 50%;" alt="Aloudname"/>
+			<br/>
+			<sub><b>Aloudname</b></sub>
+		</a>
+		<br/>
+		<sub> 2022 级 </sub>
+        <br/>
+		<sub> 苦b学习AI infra中 </sub>
+	</td>
+	<td align="center" width="210">
+		<a href="https://github.com/ZebraWoo">
+			<img src="https://github.com/ZebraWoo.png" width="80" height="80" style="border-radius: 50%;" alt="ZebraWoo"/>
+			<br/>
+			<sub><b>ZebraWoo</b></sub>
+		</a>
+		<br/>
+		<sub> 2022 级 </sub>
+		<br/>
+		<sub> 职业规划 </sub>
+	</td>
+</tr>
+</table>
 
 </div>
