@@ -143,7 +143,8 @@ git commit -m "docs: add project readme"
 git push -u origin main
 ```
 
-在 Windows CMD 里如果需要跨盘切换目录，可用 `cd /d <你的项目路径>\Hello-World`（这是 CMD 示例；Git Bash/PowerShell 常用正斜杠路径写法）。
+在 Windows CMD 里如果需要跨盘切换目录，可用 `cd /d <你的项目路径>\Hello-World`。
+注意：Git Bash/PowerShell 中通常使用正斜杠路径写法。
 
 首次推送前若不确定远程仓库是否已关联，可以先执行 `git remote -v` 检查。
 
@@ -239,8 +240,8 @@ git push origin main
 
 前面建仓库时提到过 `.gitignore` 和 `LICENSE`，这里补一嘴（避免第一次见到就懵）。
 
-- **`.gitignore`**：告诉 Git 哪些文件不要提交（如编译产物、缓存、临时文件、账号配置等）；
-- **`LICENSE`**：开源许可证，规定“别人能不能用你的代码、怎么用、需不需要署名、可不可以商用”等。
+- **`.gitignore`**： 告诉 Git 哪些文件不要提交（如编译产物、缓存、临时文件、账号配置等）；
+- **`LICENSE`**： 开源许可证，规定“别人能不能用你的代码、怎么用、需不需要署名、可不可以商用”等。
 
 如果你暂时不确定怎么选，学生练习项目可以先用 `MIT License`，后续再根据项目需求调整。
 
