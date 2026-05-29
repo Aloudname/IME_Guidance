@@ -143,7 +143,9 @@ git commit -m "docs: add project readme"
 git push -u origin main
 ```
 
-在 Windows CMD 里如果需要跨盘切换目录，可用 `cd /d <你的项目路径>\Hello-World`。首次推送前若不确定远程仓库是否已关联，可以先执行 `git remote -v` 检查。
+在 Windows CMD 里如果需要跨盘切换目录，可用 `cd /d <你的项目路径>\Hello-World`。
+
+首次推送前若不确定远程仓库是否已关联，可以先执行 `git remote -v` 检查。
 
 这里的 `-u`（`--set-upstream`）用于建立“本地分支 -> 远程分支”的跟踪关系。设置一次后，后续一般直接 `git push` / `git pull` 即可。
 
