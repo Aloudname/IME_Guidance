@@ -127,8 +127,8 @@ cd <你的项目路径>/Hello-World
 git status
 
 # 新建或修改文件（二选一：手动编辑 / 命令行写入）
-echo # Hello-World > README.md   # Windows CMD 常用写法
-echo "# Hello-World" > README.md # Bash/PowerShell 常用写法
+echo # Hello-World> README.md
+echo "# Hello-World" > README.md
 
 # 再看一眼改动状态
 git status
@@ -145,6 +145,8 @@ git commit -m "docs: add project readme"
 # 推送到远程仓库（首次推送建议加 -u）
 git push -u origin main
 ```
+
+上面“写入文件”的两条命令分别常见于 Windows CMD 和 Bash/PowerShell，按你当前终端环境选择其一即可。首次推送前若不确定远程仓库是否已关联，可以先执行 `git remote -v` 检查。
 
 这里的 `-u`（`--set-upstream`）用于建立“本地分支 -> 远程分支”的跟踪关系。设置一次后，后续一般直接 `git push` / `git pull` 即可。
 
