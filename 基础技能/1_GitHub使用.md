@@ -118,13 +118,17 @@ gh repo create Hello-World --public/--private --source=. --remote=hello --push
 假设我们已经有一个仓库 `Hello-World`，现在给它新增一个 `README.md` 并写入一句话。
 
 ```bash
-# 进入项目目录（Windows 可用 cd /d 切换盘符）
+# 进入项目目录（Windows 的 CMD 用 cd /d；Mac/Linux/Git Bash 直接 cd）
 cd /d <你的项目路径>\Hello-World
+# 或
+cd <你的项目路径>/Hello-World
 
 # 查看当前状态（哪些文件改了、哪些未跟踪）
 git status
 
-# 新建或修改文件（此处示例，使用编辑器创建 README.md 并写入一行 # Hello-World）
+# 新建或修改文件（二选一：手动编辑 / 命令行写入）
+echo # Hello-World > README.md   # Windows CMD 常用写法
+echo "# Hello-World" > README.md # Bash/PowerShell 常用写法
 
 # 再看一眼改动状态
 git status
