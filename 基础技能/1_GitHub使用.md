@@ -1,6 +1,6 @@
 # 1 GitHub使用
 
-@author(Aloudname)
+> <img src="https://github.com/Aloudname.png?size=40" width="22" style="border-radius:50%;vertical-align:middle" alt="Aloudname"/>  **[<span style="color:inherit;">Aloudname</span>](https://github.com/Aloudname)**
 
 
 ## 引言
