@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 `git push` 时触发的功能函数
-GitHub Actions 将 `@author(...)` 替换为 HTML
+令 GitHub Actions 将 `@author(...)` 替换为 HTML
 """
 
 import re, sys
