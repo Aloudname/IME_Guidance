@@ -1,6 +1,7 @@
 # 1 GitHub使用
 
-author @Aloudname @ZebraWoo
+@author(Aloudname)
+
 
 ## 引言
 

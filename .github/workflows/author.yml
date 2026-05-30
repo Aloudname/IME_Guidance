@@ -1,0 +1,32 @@
+name: Render Author Badges
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "**.md"
+
+jobs:
+  render:
+    if: "!contains(github.event.head_commit.message, '[ci skip]')"
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Render @author() markers
+        run: python3 scripts/author.py
+
+      - name: Commit changes if any
+        run: |
+          if ! git diff --quiet; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "chore: render author badges [ci skip]"
+            git push
+          fi
