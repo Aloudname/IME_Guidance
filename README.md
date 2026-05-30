@@ -34,6 +34,20 @@
 
 增加新内容时，请注意使用 Markdown 文本（`.md` 后缀。这种文本容易渲染，学起来也很快），将文档中用到的图片资源放在特定位置（`src/` 内），并保持本仓库风格的内容分区和分册哦！
 
+## 项目结构
+
+```
+IME_Guidance/
+├── .github/                  # GitHub Actions 设置
+│   └── workflows/*.yml  	  # 配置文件
+├── scripts/                  # GitHub Actions 脚本
+├── src/                      # 图片资源
+├── 校园生活/
+├── 基础技能/
+├── 求学工作/
+└── README.md                 # 本文档
+```
+
 ---
 
 <div align="center">
