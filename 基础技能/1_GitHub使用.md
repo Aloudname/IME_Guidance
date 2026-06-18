@@ -5,7 +5,7 @@
 
 ## 引言
 
-[GitHub](https://github.com/) 是世界上最大的代码托管平台。实际上，它托管的不仅仅有代码，还有一些电子书等等其他资料（比如 [公开书籍-mymmsc](https://github.com/mymmsc/books)）。实际上就是一个人人可用的仓库。这个仓库还支持多人共同创作、管理一个大型项目的代码，用起来很方便。
+[GitHub](https://github.com/) 是世界上最大的代码托管平台。实际上，它托管的不仅仅有代码，还有其他资料（比如 [公开书籍-mymmsc](https://github.com/mymmsc/books)）。实际上就是一个人人可用的仓库。这个仓库还支持多人共同创作、管理一个大型项目的代码，用起来很方便。
 
 另外，一个人的 GitHub repo 也反映了他的工作方向、最近在做的项目以及他的项目受到了多少人的关注等等。拥有高收藏的 GitHub repo，或者成为著名开源项目（比如深度学习领域的 [PyTorch库](https://github.com/pytorch/pytorch)）的重要贡献者，在找工作时的 ~~威力比原子弹还要大~~ 加分程度不低于顶刊。
 
@@ -37,15 +37,13 @@ GitHub 这个系列的教程包含新建项目、项目管理、多人协作开�
 
 ![FileRouter](../src/基础技能/1_GitHub使用/cmd_in_dir.png)
 
-安装了 `Git` 以及 `GitHub CLI` 后，可以在命令行里运行查看版本号的命令 `-v` 或者 `--version` 检查安装和配置是否正确：
+安装了 `Git` 以及 `GitHub CLI` 后，可以在命令行里运行查看版本号的命令 `--version` 或者 `-v`（缩略版，有些命令没有）检查安装和配置是否正确：
 
 ```bash
 # git
-git -v
 git --version
 
 # GitHub CLI
-gh -v
 gh --version
 ```
 
